@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "573785483810",
+    "project_id": "flutter-household",
+    "storage_bucket": "flutter-household.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573785483810:android:d2a2dd37e4ff452666787b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_household"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573785483810-8at0225edsbv89gth9jiuaelreub0172.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgt9l4-ivcowb1zWZX-OfRyiFATQpHz_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573785483810-8at0225edsbv89gth9jiuaelreub0172.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
