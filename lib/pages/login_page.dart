@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_household/pages/home_page.dart';
 import 'package:flutter_household/pages/registration_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -68,7 +69,9 @@ class _LoginPageState extends State<LoginPage> {
               .of(context)
               .size
               .width,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomePage()));
+          },
           child: const Text(
             'Login',
             textAlign: TextAlign.center,
