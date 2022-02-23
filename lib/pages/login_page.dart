@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_household/pages/registration_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -62,8 +63,11 @@ class _LoginPageState extends State<LoginPage> {
       borderRadius: BorderRadius.circular(30),
       color: Colors.teal,
       child: MaterialButton(
-          padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-          minWidth: MediaQuery.of(context).size.width,
+          padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+          minWidth: MediaQuery
+              .of(context)
+              .size
+              .width,
           onPressed: () {},
           child: const Text(
             'Login',
@@ -88,11 +92,11 @@ class _LoginPageState extends State<LoginPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     SizedBox(
-                      height: 200,
-                      child: Image.asset(
-                        'assets/blk-black.png',
-                        fit: BoxFit.contain,
-                      )
+                        height: 150,
+                        child: Image.asset(
+                          'assets/HM-logo.png',
+                          fit: BoxFit.contain,
+                        )
                     ),
                     const SizedBox(height: 45),
                     emailField,
@@ -102,21 +106,25 @@ class _LoginPageState extends State<LoginPage> {
                     loginButton,
                     const SizedBox(height: 15),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        const Text("Don't have an account? "),
-                        GestureDetector(
-                          onTap: () {},
-                          child: const Text(
-                            'Sign Up',
-                            style: TextStyle(
-                              color: Colors.teal,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          const Text("Don't have an account? "),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                  builder: (
+                                      context) => const RegistrationPage()));
+                            },
+                            child: const Text(
+                              'Sign Up',
+                              style: TextStyle(
+                                  color: Colors.teal,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15
+                              ),
                             ),
-                          ),
-                        )
-                      ]
+                          )
+                        ]
                     )
                   ],
                 ),
